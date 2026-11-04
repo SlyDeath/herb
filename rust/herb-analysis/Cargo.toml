@@ -25,7 +25,10 @@ cli = ["dep:colored"]
 colored = { version = "3", optional = true }
 herb = { path = ".." }
 herb-config = { path = "../herb-config" }
-rubydex = { git = "https://github.com/Shopify/rubydex", tag = "v0.4.1" }
+rubydex = { git = "https://github.com/Shopify/rubydex", tag = "v0.4.3" }
+# TODO: Drop these pins once the `Gemfile` moves to Prism `v2.1.0`, since rubydex has to link the same Prism as herb.
+ruby-prism = "=2.0.0"
+ruby-prism-sys = "=2.0.0"
 
 [dev-dependencies]
 insta = "1.40"
